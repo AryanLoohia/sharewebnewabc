@@ -47,7 +47,7 @@ body {
     position:absolute;
     top:0;
     left:0;
-    padding:20px 4%;
+    padding: 20px 0%;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -123,6 +123,7 @@ body {
   }
   .wrapper ul li a {
     z-index: 10;
+    padding: 5px 30px;
     color: none;
     text-decoration: none;
     font-size: 74px;
@@ -242,7 +243,13 @@ body {
         animation: moveUpDown 2s infinite;
         filter: invert(1) brightness(100%);
     }
+    .wrapper ul li a {
+        font-size: 26px;
+        line-height: 68px;
+        padding: 5px 0px;
+    }
 }
+
 
 #navLogo img{
        max-height: 64px !important;
