@@ -1,5 +1,12 @@
 let form = document.querySelector("form");
 // console.log("unreuv")
+
+// abc=document.querySelector(".button-5")
+
+
+// abc.addEventListener("click",()=>{
+//     console.log("hello");
+// })
 // The document.querySelector() method returns the first element that matches a specified CSS selector.
 form.addEventListener('submit', (e) => {
     console.log("unreuv")

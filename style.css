@@ -1,5 +1,7 @@
 *{
     margin:0;
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
     padding:0;
     /* z-index:-1; */
     box-sizing: border-box;
@@ -174,15 +176,21 @@
     font-weight: 600;
   }
 
-  .catch{
+  .catch {
     text-align: center;
+    box-shadow: 1px -10px 104px 51px var(--green);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+  .catch h2{  
+    color:white;
   }
   
   .catch h1 {
     font-size: 106px;
     letter-spacing: 0.8rem;
     color: white;
-    box-shadow: 1px -10px 50px 30px var(--green);
+    
     font-weight: 900;
     border-radius: 4%;
     transition: 0.5s;}
@@ -249,6 +257,10 @@
         font-size: 26px;
         line-height: 68px;
         padding: 5px 0px;
+    }
+
+    .catch img{
+        height: 25px;
     }
 }
 
@@ -666,6 +678,12 @@
     overflow-y: scroll;
     align-items: center;
 
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 #navLogo img {
@@ -1128,8 +1146,8 @@
 }
 
 #review2 {
-    outline: solid var(--green);
-    outline-width: 3rem;
+    /* outline: solid var(--green); */
+    /* outline-width: 3rem; */
     
 }
 
@@ -1153,7 +1171,7 @@
     display: inline-block;
     margin: 0;
     height: 417px;
-    box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 12px 50px 22px var(--green);
     width: 30vw;
     background: url(assets/cultureos3.png);
     background-size: cover;
@@ -1165,7 +1183,7 @@
     margin: 0;
     height: 417px;
     width: 30vw;
-    box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 12px 50px 22px var(--green);
     background: url(assets/fluxgentest3.png);
     background-size: cover;
     background-position: center;
@@ -1177,7 +1195,7 @@
     /* z-index:-1; */
     height: 417px;
     width: 30vw;
-    box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 12px 50px 22px var(--green);
     background: url(assets/bintixtest.png);
     background-size: cover;
     background-position: center;
